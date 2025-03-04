@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Музыкальный сайт</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: #f0f0f0;
+        }
+        button {
+            padding: 20px 40px;
+            font-size: 24px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <button onclick="playMusic()">Включить музыку</button>
+
+    <audio id="backgroundMusic" loop>
+        <!-- Вставьте сюда ссылку на аудиофайл -->
+        <source src="http://rus.hitmotop.com/get/music/20241109/Vova_Solodkov_-_Barabulka_78505531.mp3">Скачать MP3</a>" type="audio/mpeg">
+        Ваш браузер не поддерживает аудио элемент.
+    </audio>
+
+    <script>
+        function playMusic() {
+            var audio = document.getElementById("backgroundMusic");
+            audio.play();
+        }
+    </script>
+</body>
+</html>
